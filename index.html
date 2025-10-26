@@ -369,7 +369,7 @@ button:hover { transform: scale(1.05); opacity: 0.9; }
 
 /* Permite rolagem no quiz e outros slides longos em mobile */
 .quiz-slide .content, .content[data-scroll="true"] {
-  max-height: 80vh; 
+  max-height: 80vh; /* O ponto-e-vírgula está aqui! */
   overflow-y: auto;
 }
 
@@ -405,7 +405,7 @@ button:hover { transform: scale(1.05); opacity: 0.9; }
   opacity: 0.8;
 }
 
-/* --- NOVO ESTILO FOOTER --- */
+/* --- ESTILO FOOTER --- */
 footer {
     position: fixed; /* Fixo no canto inferior */
     bottom: 0;
@@ -602,38 +602,42 @@ footer {
       <div class="quiz-track">
 
         <div class="quiz-question">
-          <p><b>1. What is one emotional benefit of listening to music?</b></p>
+          <p><b>1. According to Nietzsche, what would life be without music?</b></p>
           <div class="quiz-options">
-            <button onclick="checkAnswer(this, true)">b) It helps relax and improve mood</button>
-            <button onclick="checkAnswer(this, false)">a) It increases stress</button>
-            <button onclick="checkAnswer(this, false)">c) It makes people angry</button>
+            <button onclick="checkAnswer(this, false)">a) Peaceful and harmonious</button>
+            <button onclick="checkAnswer(this, true)">b) A mistake</button>
+            <button onclick="checkAnswer(this, false)">c) Silent but meaningful</button>
+            <button onclick="checkAnswer(this, false)">d) Only for religious purposes</button>
           </div>
         </div>
 
         <div class="quiz-question">
-          <p><b>2. How does music affect social connection?</b></p>
+          <p><b>2. What chemical does the brain release when we listen to music?</b></p>
           <div class="quiz-options">
-            <button onclick="checkAnswer(this, false)">a) It isolates people</button>
-            <button onclick="checkAnswer(this, true)">b) It unites people through shared experiences</button>
-            <button onclick="checkAnswer(this, false)">c) It has no effect</button>
+            <button onclick="checkAnswer(this, false)">a) Insulin</button>
+            <button onclick="checkAnswer(this, true)">b) Dopamine</button>
+            <button onclick="checkAnswer(this, false)">c) Adrenaline</button>
+            <button onclick="checkAnswer(this, false)">d) Serotonin</button>
           </div>
         </div>
 
         <div class="quiz-question">
-          <p><b>3. According to studies, what can music improve in students?</b></p>
+          <p><b>3. Which of the following is one of the main reasons music is considered important in life?</b></p>
           <div class="quiz-options">
-            <button onclick="checkAnswer(this, true)">a) Memory and concentration</button>
-            <button onclick="checkAnswer(this, false)">b) Sleep only</button>
-            <button onclick="checkAnswer(this, false)">c) Appetite</button>
+            <button onclick="checkAnswer(this, false)">a) It exists only for entertainment</button>
+            <button onclick="checkAnswer(this, false)">b) It disconnects cultures</button>
+            <button onclick="checkAnswer(this, true)">c) It provides emotional support and connection</button>
+            <button onclick="checkAnswer(this, false)">d) It is used only for historical events</button>
           </div>
         </div>
 
         <div class="quiz-question">
-          <p><b>4. Complete the quote: “Without music, life would be a ______.”</b></p>
+          <p><b>4. What does the term musical anhedonia refer to?</b></p>
           <div class="quiz-options">
-            <button onclick="checkAnswer(this, false)">a) Party</button>
-            <button onclick="checkAnswer(this, false)">b) Dream</button>
-            <button onclick="checkAnswer(this, true)">c) Mistake</button>
+            <button onclick="checkAnswer(this, false)">a) The fear of musical instruments</button>
+            <button onclick="checkAnswer(this, true)">b) A condition where music does not produce pleasure</button>
+            <button onclick="checkAnswer(this, false)">c) The enjoyment of only loud music</button>
+            <button onclick="checkAnswer(this, false)">d) The ability to write music perfectly</button>
           </div>
         </div>
 
