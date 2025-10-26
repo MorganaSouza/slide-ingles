@@ -404,6 +404,20 @@ button:hover { transform: scale(1.05); opacity: 0.9; }
   color: #666;
   opacity: 0.8;
 }
+
+/* --- NOVO ESTILO FOOTER --- */
+footer {
+    position: fixed; /* Fixo no canto inferior */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    background: rgba(0, 0, 0, 0.4); /* Fundo sutil */
+    color: #777; /* Cor cinza sutil */
+    font-size: 0.8em;
+    z-index: 4; /* Acima de tudo, exceto a navegação principal (que é 3) */
+}
 </style>
 </head>
 <body>
@@ -653,6 +667,10 @@ button:hover { transform: scale(1.05); opacity: 0.9; }
   <button id="prev">◀ Previous</button>
   <button id="next">Next ▶</button>
 </div>
+
+<footer>
+    <span>Copyright © 2024 Morgana Souza. Todos os Direitos Reservados.</span>
+</footer>
 
 <script>
 // --- SLIDES CONTROL ---
